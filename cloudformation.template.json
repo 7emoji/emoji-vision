@@ -1,6 +1,6 @@
 {
   "AWSTemplateFormatVersion": "2010-09-09",
-  "Description": "sushiswap.vision site",
+  "Description": "emojiswap.vision site",
   "Outputs": {
     "DeploymentAccessKeyId": {
       "Description": "Access key ID for deploying to the S3 bucket",
@@ -82,12 +82,12 @@
       "Type": "AWS::CertificateManager::Certificate",
       "Description": "The certificate used to secure the CloudFront distribution",
       "Properties": {
-        "DomainName": "sushiswap.vision",
+        "DomainName": "emojiswap.vision",
         "ValidationMethod": "DNS",
         "Tags": [
           {
             "Key": "Name",
-            "Value": "sushiswap.vision"
+            "Value": "emojiswap.vision"
           },
           {
             "Key": "Stack",
@@ -241,10 +241,10 @@
               "ResponsePagePath": "/"
             }
           ],
-          "Comment": "sushiswap.vision",
+          "Comment": "emojiswap.vision",
           "Enabled": true,
           "Aliases": [
-            "sushiswap.vision"
+            "emojiswap.vision"
           ],
           "DefaultRootObject": "index.html",
           "HttpVersion": "http2",
